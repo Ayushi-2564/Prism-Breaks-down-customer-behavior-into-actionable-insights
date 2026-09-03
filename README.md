@@ -151,6 +151,10 @@ customer-intelligence-platform/
 ```
 
 ---
+##  Live Demo
+
+- **Web App (Frontend):** https://prism-breaks-down-customer-behavior.vercel.app
+- **REST API (Backend):** https://customer-intelligence-api-b5dq.onrender.com
 
 ##  Quick Start & Installation
 
