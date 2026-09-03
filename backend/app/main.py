@@ -45,6 +45,15 @@ app.add_middleware(
 # Mount API Router
 app.include_router(api_router, prefix=settings.API_PREFIX)
 
+@app.get("/")
+async def root():
+    return {
+        "message": "Customer Intelligence Platform API",
+        "status": "online",
+        "docs": "/docs",
+        "health": f"{settings.API_PREFIX}/health"
+    }
+
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     return JSONResponse(
