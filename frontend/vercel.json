@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://customer-intelligence-api-b5dq.onrender.com/api/:path*"
+    }
+  ]
+}
