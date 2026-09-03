@@ -1,0 +1,85 @@
+{
+  "wape": 8.26,
+  "naive_wape": 15.81,
+  "wape_improvement_pct": 7.55,
+  "mae": 8.26,
+  "rmse": 10.76,
+  "total_test_records": 30000,
+  "feature_importance": [
+    {
+      "feature": "rolling_mean_30",
+      "importance": 1177
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 633
+    },
+    {
+      "feature": "month",
+      "importance": 610
+    },
+    {
+      "feature": "is_promo",
+      "importance": 584
+    },
+    {
+      "feature": "lag_7",
+      "importance": 562
+    },
+    {
+      "feature": "day_of_month",
+      "importance": 512
+    },
+    {
+      "feature": "rolling_mean_7",
+      "importance": 455
+    },
+    {
+      "feature": "lag_14",
+      "importance": 416
+    },
+    {
+      "feature": "rolling_std_7",
+      "importance": 273
+    },
+    {
+      "feature": "lag_30",
+      "importance": 188
+    },
+    {
+      "feature": "item",
+      "importance": 170
+    },
+    {
+      "feature": "store",
+      "importance": 153
+    },
+    {
+      "feature": "lag_1",
+      "importance": 134
+    },
+    {
+      "feature": "rolling_std_30",
+      "importance": 117
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 11
+    },
+    {
+      "feature": "quarter",
+      "importance": 5
+    }
+  ],
+  "adf_stationarity_test": {
+    "adf_statistic": -1.1258,
+    "p_value": 0.7047,
+    "is_stationary": false,
+    "critical_values": {
+      "1%": -3.4396,
+      "5%": -2.8656,
+      "10%": -2.5689
+    },
+    "interpretation": "Series is Non-Stationary (Contains Trend/Unit Root)"
+  }
+}
