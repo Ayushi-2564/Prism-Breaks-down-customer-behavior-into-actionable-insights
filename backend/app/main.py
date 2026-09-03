@@ -33,10 +33,10 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# Configure CORS for Vite / React Frontend
+# Configure CORS for Vite / React Frontend (W3C compliant for cross-origin browser requests)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=".*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
