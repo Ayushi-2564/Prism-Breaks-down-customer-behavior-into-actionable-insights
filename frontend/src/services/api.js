@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Production API Base URL pointing to live Render backend
 const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://customer-intelligence-api-b5dq.onrender.com/api' : 'http://localhost:8000/api');
 
 const apiClient = axios.create({
