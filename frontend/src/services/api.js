@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://customer-intelligence-api-b5dq.onrender.com/api' : 'http://localhost:8000/api');
+let rawApiUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://customer-intelligence-api-b5dq.onrender.com/api' : 'http://localhost:8000/api');
+if (rawApiUrl && !rawApiUrl.endsWith('/api') && !rawApiUrl.endsWith('/api/')) {
+  rawApiUrl = rawApiUrl.replace(/\/+$/, '') + '/api';
+}
+const API_BASE_URL = rawApiUrl;
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
